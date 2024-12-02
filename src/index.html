@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="./css/output.css" rel="stylesheet">
+      <link rel="icon" href="./images/TLIF-LOGO.png" size="32x32" />
+    <title>BIDEX-PRINTING-SERVICES</title>
+     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" defer></script>
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <header class="sticky top-0 z-50">
+      <nav
+        class="flex w-full items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16"
+      >
+        <a href="./index.html" class="flex items-center py-2.5">
+          <div class="text-gray-700">
+            <p class="leading-3 text-center">
+              <span
+                class="font-semibold text-5xl  tracking-wide text-blue-900"
+                >BIDEX</span
+              ><br /><span class=""
+                >Printing Enterprises</span
+              >
+            </p>
+          </div>
+        </a>
+
+        <div class="flex items-center gap-4">
+          <div
+            class="bg-white p-2 lg:hidden"
+            onclick="openNav()"
+          >
+            <img src="./images/icon-hamburger.svg" alt="Hamburger image" />
+          </div>
+        </div>
+        <!-- Desktop Navigation -->
+        <ul
+          class="hidden lg:flex lg:text-xl lg:items-center lg:gap-4 text-blue-700 font-sans font-medium lg:ml-8 xl:gap-8"
+        >
+          <li
+            class="text-blue-900 p-2"
+          >
+            <a href="./index.html" class="hover:text-blue-900">Home</a>
+          </li>
+          <li
+            class="hover:text-blue-900 p-2"
+          >
+            <a href="#">About Us</a>
+          </li>
+          <li
+            class=" hover:text-blue-900 p-2"
+          >
+            <a href="#">Services</a>
+          </li>
+          <li
+             class=" hover:text-blue-900 p-2"
+          >
+            <a href="#">Contact</a>
+        </li>
+        </ul>
+        <!-- End of Desktop Navigation -->
+        <div
+          id="sideNav"
+          class="fixed top-0 right-0 bg-gray-200 w-full max-h-fit flex overflow-x-hidden duration-500 z-10 lg:hidden"
+        >
+          <div
+            class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48"
+          >
+            <a href="javascript:void(0)" onclick="exitNav()"
+              ><img src="./images/icon-close.svg" alt="Close logo"
+            /></a>
+          </div>
+
+          <!-- Mobile Navigation -->
+          <nav>
+            <ul class="text-left text-3xl font-sans ml-4 mt-36 sm:text-3xl">
+              <li class="p-2 hover:text-white text-black"><a href="./index.html">Home</a></li>
+              <li class="p-2 hover:text-white text-black"><a href="#">AboutUs</a></li>
+              <li class="p-2 hover:text-white text-black"><a href="#">Services</a></li> 
+              <li class="p-2 hover:text-white text-black"><a href="#">Contact</a></li>  
+            </ul>
+          </nav>
+        </div>
+      </nav>
+
+      <div
+        onclick="exitNav()"
+        id="sideBar"
+        class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10">
+    </div>
+      
+    </header>
+     <div class="relative h-screen w-full overflow-hidden">
+  <!-- Background Video -->
+  <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop>
+    <source src="./images/printing-press-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay Content -->
+  <div class="relative z-10 flex items-center justify-center h-full">
+    <div class="text-white p-8 rounded-lg text-center">
+      <h1 class="text-xl font-bold">Welcome to Bidex Printing Company.</h1>
+      <p class="text-8xl font-bold">Trusted Printing & Copy Center</p>
+      <p class="text-gray-500 text-4xl pt-8">Design helps us to Stand out, It tells a story about us and what we stand for.</p>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- SERVICES SECTION -->
+ <section class="bg-gray-300">
+ <!-- div for the service and the bold text and flexed text -->
+ <div class="lg:flex lg:justify-center lg:items-center lg:gap-8 mx-4">
+  <!-- individual div for service and bold -->
+  <div>
+ <h3 class="font-light text-xl text-blue-900 pt-8 ">Our Services</h3>
+ <h1 class="text-5xl font-bold max-w-lg text-blue-900">Bidex Printing Service is the Best in Your Town</h1>
+ </div>
+ <!-- individual div for service and bold closing -->
+
+  <!-- div for flexed text -->
+ <div class="pb-8">
+ <h1 class="max-w-md leading-8 pt-8 ">Bidex Printing service is an established business offering printing and design to clients in shomolu axis. We have many combined years of experience in this sector. Trusted by clients, we pride ourselves on our customer service.Whether you are based in our home town, or coming to this town for a trade show, Bidex has all your printing needs covered.</h1>
+</div>
+<!-- div for flexed text closing -->
+</div>
+<!-- div for the service and the bold text and flexed text closing -->
+<div class="ml-4 lg:flex lg:justify-center lg:gap-6 lg:my-20 bg-gray-300 grid grid-cols-3 gap-4">
+ 
+  <div class="bg-white rounded-sm">
+     <img src="./images/T-shirt.png" alt="t-shirt-image" class="px-6 py-3 lg:px-20 lg:py-4">
+     <p class="pl-4 font-semibold text-lg max-w-20 pb-4">T-shirt Printing</p>
+  </div>
+
+   <div class="bg-white rounded-sm">
+     <img src="./images/Flyer.png" alt="t-shirt-image" class="px-6 py-3 lg:px-20 lg:py-4">
+     <p class="pl-4 font-semibold text-lg max-w-20 pb-4">Flyer Printing</p>
+  </div>
+
+   <div class="bg-white rounded-sm">
+     <img src="./images/sticker-1-1.png" alt="t-shirt-image" class="px-6 py-3 lg:px-20 lg:py-4">
+     <p class="pl-4 font-semibold text-lg max-w-20 pb-4">Sticker Printing</p>
+  </div>
+
+   <div class="bg-white rounded-sm">
+     <img src="./images/poster-1-1.png" alt="t-shirt-image" class="px-6 py-3 lg:px-20 lg:py-4">
+     <p class="pl-4 font-semibold text-lg max-w-20 pb-4">Poster Printing</p>
+  </div>
+
+   <div class="bg-white rounded-sm">
+     <img src="./images/postcard-1-1.png" alt="t-shirt-image" class="px-6 py-3 lg:px-20 lg:py-4">
+     <p class="pl-4 font-semibold text-lg max-w-20 pb-4">Postcards Printing</p>
+  </div>
+
+ </div>
+ </section>
+ <!-- features section -->
+ 
+   <h1 class="text-blue-500 font-normal text-2xl text-center">Our Features</h1>
+      <h1 class="font-bold text-4xl lg:text-6xl text-center text-blue-950">What We Can Do</h1>
+      <section class="lg:flex lg:justify-center lg:items-center lg:gap-5 pt-12">
+  <div class="m-4">
+      <img src="images/service-1-1.jpg" alt="woman holding a book" class="w-full">
+      <!-- div to give texts background colors -->
+       <div class="bg-gray-200 py-12">
+      <p class="font-bold text-2xl text-blue-950 text-center">3D Printing</p>
+      <div class="flex justify-center">
+      <p class="font-semibold text-gray-500 max-w-56">Bidex-printing is your source for everything including 3D printing and innovation.</p>
+      </div>
+    </div>
+      </div>
+
+       <div class="m-4">
+      <img src="images/service-1-2.jpg" alt="woman holding a book" class="w-full">
+      <!-- div to give texts background colors -->
+       <div class="bg-gray-200 py-12">
+      <p class="font-bold text-2xl text-blue-950 text-center">Digital Printing</p>
+      <div class="flex justify-center">
+      <p class="font-semibold text-gray-500 max-w-56">We offer advanced digital printing solutions that produce a stunning quality print.</p>
+      </div>
+    </div>
+      </div>
+
+
+    <div class="m-4">
+      <img src="images/service-1-3.jpg" alt="woman holding a book" class="w-full">
+      <!-- div to give texts background colors -->
+       <div class="bg-gray-200 py-12">
+      <p class="font-bold text-2xl text-blue-950 text-center">Offset Printing</p>
+      <div class="flex justify-center">
+      <p class="font-semibold text-gray-500 max-w-56">Bidex-printing is the best choice for efficient offset printing for your books.</p>
+      </div>
+    </div>
+      </div>
+    </section>
+  
+    <!-- Contact section -->
+     <section class="bg-blue-950 lg:flex lg:justify-around py-16">
+       <h1 class="text-3xl lg:text-4xl font-bold text-center text-white">Place Your Order Now</h1>
+       <div class="flex justify-center">
+       <button id="whatsappButton" class="bg-blue-800 text-white font-bold text-lg px-6 py-2 rounded-md hover:bg-blue-300 transition duration-300 mt-4">Contact Us</button>
+       </div>
+      </section>
+
+     <!-- About us section -->
+      <p class="font-bold text-blue-950 text-4xl text-center py-20">About Us</p>
+      <section class="lg:flex lg:justify-around ">
+        <div class="border px-12 py-8 m-4">
+          <p class="font-bold text-xl pb-2 text-blue-950">Best Printing Services</p>
+           <p class="font-semibold text-gray-500 max-w-64">Organizations like using Bidex-printing since the site provides a great mix of quality and affordable pricing. you’ll find for your company’s branding.</p>
+        </div>
+
+        <div class="border px-12 py-8 m-4">
+          <p class="font-bold text-xl pb-2 text-blue-950">Trusted & Secure</p>
+           <p class="font-semibold text-gray-500 max-w-64">Dexen is one of the most trusted specialists in secure printing. Everything from origination to fulfillment occurs in our secure printing facility.</p>
+        </div>
+
+        <div class="border px-12 py-8 m-4">
+          <p class="font-bold text-xl pb-2 text-blue-950">Customer Satisfaction</p>
+           <p class="font-semibold text-gray-500 max-w-64">We have spent years satisfying our clients. The secret of our customer satisfaction is the hard work and dedication to be the best in this industry.</p>
+        </div>
+      </section>
+
+
+       <section class="w-full">
+    <iframe class="w-full"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3143881248448!2d6.536642!3d6.4818094236483885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b7fd941dfd7%3A0xa6fb6e6235d343fe!2s24%20Apapa%20Rd%2C%20Shomolu%Lagos%
+      %2C%20Lagos%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1715176606798!5m2!1sen!2sng" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+      <footer class="bg-blue-950 text-white text-bold text-center mt-4 py-4">
+        &copy; All Rights reserved .2024 Nafeesah
+      </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+<!-- npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch -->
